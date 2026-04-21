@@ -1,6 +1,6 @@
 # Texas Hold'em EV Calculator (Monte Carlo Simulation)
 
-**Note to reviewers:** *This is an archival project built during a 2-week personal challenge at the Apple Developer Academy. It represents my early journey into software engineering. I am keeping it in its original state as a benchmark of my growth, but I have included a detailed architectural retrospective below on how I would rebuild this system today.*
+**Note:** *This is an archival project built during a 2-week personal challenge at the Apple Developer Academy. It represents my early journey into software engineering. I am keeping it in its original state as a benchmark of my growth, but I have included a detailed architectural retrospective below on how I would rebuild this system today.*
 
 ## 📌 The Concept & The "Why"
 This is a native iOS application (UIKit, 100% Swift Standard Library) designed to calculate the Expected Value (EV) of a Texas Hold'em poker hand. 
