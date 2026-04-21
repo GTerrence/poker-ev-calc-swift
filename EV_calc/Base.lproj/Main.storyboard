@@ -1,0 +1,543 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="EV_calc" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1126"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qC6-jg-t4c">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1126"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAv-33-mdL">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="lK9-pB-Maf">
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="1100"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6J5-UQ-V0r">
+                                                        <rect key="frame" x="0.0" y="0.0" width="414" height="300"/>
+                                                        <subviews>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Poker EV Calculator" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I97-C9-Fnr">
+                                                                <rect key="frame" x="0.0" y="40" width="414" height="37"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you lose, what is your expected loss?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hdL-Iw-C6h">
+                                                                <rect key="frame" x="20" y="201.5" width="374" height="20.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fGd-cJ-1VO">
+                                                                <rect key="frame" x="20" y="147.5" width="374" height="34"/>
+                                                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            </textField>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nQT-rl-VeC">
+                                                                <rect key="frame" x="20" y="242" width="374" height="34"/>
+                                                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                                                            </textField>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="If you win, what is your expected profit?" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fvr-Z3-0SY">
+                                                                <rect key="frame" x="20" y="107" width="374" height="20.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="I97-C9-Fnr" secondAttribute="trailing" id="5KI-Hj-xJq"/>
+                                                            <constraint firstItem="nQT-rl-VeC" firstAttribute="top" secondItem="hdL-Iw-C6h" secondAttribute="bottom" constant="20" id="6Pr-5m-LV3"/>
+                                                            <constraint firstItem="nQT-rl-VeC" firstAttribute="leading" secondItem="6J5-UQ-V0r" secondAttribute="leading" constant="20" id="741-hD-Mna"/>
+                                                            <constraint firstItem="fvr-Z3-0SY" firstAttribute="leading" secondItem="6J5-UQ-V0r" secondAttribute="leading" constant="20" id="DYJ-kk-T7P"/>
+                                                            <constraint firstItem="fvr-Z3-0SY" firstAttribute="top" secondItem="I97-C9-Fnr" secondAttribute="bottom" constant="30" id="Eh3-Le-SYu"/>
+                                                            <constraint firstItem="fGd-cJ-1VO" firstAttribute="leading" secondItem="6J5-UQ-V0r" secondAttribute="leading" constant="20" id="Gsg-II-YqN"/>
+                                                            <constraint firstAttribute="height" constant="300" id="J5W-aR-7gs"/>
+                                                            <constraint firstAttribute="trailing" secondItem="nQT-rl-VeC" secondAttribute="trailing" constant="20" id="KAq-4B-OvT"/>
+                                                            <constraint firstAttribute="trailing" secondItem="fGd-cJ-1VO" secondAttribute="trailing" constant="20" id="MgL-Dz-wwW"/>
+                                                            <constraint firstItem="I97-C9-Fnr" firstAttribute="top" secondItem="6J5-UQ-V0r" secondAttribute="top" constant="40" id="TlF-Va-0IR"/>
+                                                            <constraint firstItem="hdL-Iw-C6h" firstAttribute="top" secondItem="fGd-cJ-1VO" secondAttribute="bottom" constant="20" id="W2h-eG-mqw"/>
+                                                            <constraint firstItem="hdL-Iw-C6h" firstAttribute="leading" secondItem="6J5-UQ-V0r" secondAttribute="leading" constant="20" id="cwD-1h-Jnv"/>
+                                                            <constraint firstItem="fGd-cJ-1VO" firstAttribute="top" secondItem="fvr-Z3-0SY" secondAttribute="bottom" constant="20" id="iv2-DU-5e7"/>
+                                                            <constraint firstItem="I97-C9-Fnr" firstAttribute="leading" secondItem="6J5-UQ-V0r" secondAttribute="leading" id="tmm-zE-dJP"/>
+                                                            <constraint firstAttribute="trailing" secondItem="fvr-Z3-0SY" secondAttribute="trailing" constant="20" id="v0Z-0Y-sRi"/>
+                                                            <constraint firstAttribute="trailing" secondItem="hdL-Iw-C6h" secondAttribute="trailing" constant="20" id="vff-BC-01d"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mu9-3Q-AvW" customClass="InputCardView" customModule="EV_calc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="305" width="414" height="110"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WbM-Rg-oPL">
+                                                                <rect key="frame" x="20" y="50.5" width="374" height="34"/>
+                                                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZuH-bq-ar8" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="360" y="50.5" width="34" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="34" id="4fm-2p-qN7"/>
+                                                                    <constraint firstAttribute="width" constant="34" id="hVr-xc-53U"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="delete.left" catalog="system"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What cards are revealed at the flop? (optional)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9RJ-RH-OEe">
+                                                                <rect key="frame" x="20" y="10" width="374" height="20.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U5n-gz-kuD" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="50.5" width="330" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="330" id="3Y4-Pp-6Gi"/>
+                                                                    <constraint firstAttribute="height" constant="34" id="Tud-Mk-MVs"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                                <connections>
+                                                                    <action selector="displayPlayerCardPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KKw-gU-rqE"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="WbM-Rg-oPL" firstAttribute="leading" secondItem="mu9-3Q-AvW" secondAttribute="leading" constant="20" id="95L-qh-Nom"/>
+                                                            <constraint firstItem="WbM-Rg-oPL" firstAttribute="top" secondItem="9RJ-RH-OEe" secondAttribute="bottom" constant="20" id="GXw-Tx-v4g"/>
+                                                            <constraint firstItem="U5n-gz-kuD" firstAttribute="leading" secondItem="mu9-3Q-AvW" secondAttribute="leading" constant="20" id="LAn-dk-BOo"/>
+                                                            <constraint firstItem="9RJ-RH-OEe" firstAttribute="top" secondItem="mu9-3Q-AvW" secondAttribute="top" constant="10" id="O6t-iB-n66"/>
+                                                            <constraint firstItem="U5n-gz-kuD" firstAttribute="top" secondItem="9RJ-RH-OEe" secondAttribute="bottom" constant="20" id="Ooa-eo-IhN"/>
+                                                            <constraint firstItem="ZuH-bq-ar8" firstAttribute="top" secondItem="9RJ-RH-OEe" secondAttribute="bottom" constant="20" id="UOa-Sr-xrU"/>
+                                                            <constraint firstAttribute="height" constant="110" id="bNm-rD-CZv"/>
+                                                            <constraint firstAttribute="trailing" secondItem="WbM-Rg-oPL" secondAttribute="trailing" constant="20" id="fJC-MQ-cQy"/>
+                                                            <constraint firstAttribute="trailing" secondItem="ZuH-bq-ar8" secondAttribute="trailing" constant="20" id="iOg-vJ-yZl"/>
+                                                            <constraint firstItem="9RJ-RH-OEe" firstAttribute="leading" secondItem="mu9-3Q-AvW" secondAttribute="leading" constant="20" id="t0w-aC-zqD"/>
+                                                            <constraint firstAttribute="trailing" secondItem="9RJ-RH-OEe" secondAttribute="trailing" constant="20" id="xgb-cg-pFt"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="cardPickerButton" destination="U5n-gz-kuD" id="n2L-9P-7Pz"/>
+                                                            <outlet property="label_text" destination="9RJ-RH-OEe" id="8UT-id-d0B"/>
+                                                            <outlet property="opponent_text_field" destination="WbM-Rg-oPL" id="w8R-eJ-Nfn"/>
+                                                            <outlet property="removeLastCardButton" destination="ZuH-bq-ar8" id="IZ0-YD-ihr"/>
+                                                        </connections>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tWP-RH-xmi" customClass="InputCardView" customModule="EV_calc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="420" width="414" height="110"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="9Y1-I6-7ec">
+                                                                <rect key="frame" x="20" y="50.5" width="374" height="34"/>
+                                                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRc-7n-TxJ" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="360" y="50.5" width="34" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="34" id="0ag-zY-hAl"/>
+                                                                    <constraint firstAttribute="width" constant="34" id="Vg4-an-euU"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="delete.left" catalog="system"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What cards are revealed at the turn? (optional)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tcE-Rl-p1f">
+                                                                <rect key="frame" x="20" y="10" width="374" height="20.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cZa-1S-QNK" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="50.5" width="330" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="330" id="NNA-UV-jft"/>
+                                                                    <constraint firstAttribute="height" constant="34" id="OpE-FO-O0b"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                                <connections>
+                                                                    <action selector="displayPlayerCardPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="T8K-8f-vhF"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="9Y1-I6-7ec" secondAttribute="trailing" constant="20" id="6wH-8n-avF"/>
+                                                            <constraint firstItem="tcE-Rl-p1f" firstAttribute="top" secondItem="tWP-RH-xmi" secondAttribute="top" constant="10" id="HtY-yv-cb7"/>
+                                                            <constraint firstItem="cZa-1S-QNK" firstAttribute="leading" secondItem="tWP-RH-xmi" secondAttribute="leading" constant="20" id="J50-uZ-wo6"/>
+                                                            <constraint firstAttribute="trailing" secondItem="tcE-Rl-p1f" secondAttribute="trailing" constant="20" id="YIH-vq-4Zx"/>
+                                                            <constraint firstItem="9Y1-I6-7ec" firstAttribute="top" secondItem="tcE-Rl-p1f" secondAttribute="bottom" constant="20" id="Zzq-jg-fmG"/>
+                                                            <constraint firstItem="9Y1-I6-7ec" firstAttribute="leading" secondItem="tWP-RH-xmi" secondAttribute="leading" constant="20" id="j2f-JT-7dN"/>
+                                                            <constraint firstItem="cZa-1S-QNK" firstAttribute="top" secondItem="tcE-Rl-p1f" secondAttribute="bottom" constant="20" id="mWn-AT-aOD"/>
+                                                            <constraint firstAttribute="trailing" secondItem="PRc-7n-TxJ" secondAttribute="trailing" constant="20" id="n7V-mL-ZSw"/>
+                                                            <constraint firstItem="PRc-7n-TxJ" firstAttribute="top" secondItem="tcE-Rl-p1f" secondAttribute="bottom" constant="20" id="oco-9q-XTo"/>
+                                                            <constraint firstAttribute="height" constant="110" id="tpH-ZG-OkJ"/>
+                                                            <constraint firstItem="tcE-Rl-p1f" firstAttribute="leading" secondItem="tWP-RH-xmi" secondAttribute="leading" constant="20" id="v3L-uV-ICW"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="cardPickerButton" destination="cZa-1S-QNK" id="BIg-ro-wuO"/>
+                                                            <outlet property="label_text" destination="tcE-Rl-p1f" id="2m3-rW-ZJq"/>
+                                                            <outlet property="opponent_text_field" destination="9Y1-I6-7ec" id="HG0-pd-glE"/>
+                                                            <outlet property="removeLastCardButton" destination="PRc-7n-TxJ" id="T5U-Np-ID6"/>
+                                                        </connections>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MCz-Ji-2JY" customClass="InputCardView" customModule="EV_calc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="535" width="414" height="110"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ykr-O3-0NI">
+                                                                <rect key="frame" x="20" y="50.5" width="374" height="34"/>
+                                                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tXb-Yt-u80" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="360" y="50.5" width="34" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="34" id="EyX-hR-hjd"/>
+                                                                    <constraint firstAttribute="width" constant="34" id="H8D-YZ-NqQ"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="delete.left" catalog="system"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What cards are revealed at the river? (optional)" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eYH-Er-ewK">
+                                                                <rect key="frame" x="20" y="10" width="374" height="20.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VSM-Mw-cgp" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="50.5" width="330" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="330" id="U3z-DA-c8c"/>
+                                                                    <constraint firstAttribute="height" constant="34" id="d68-yd-1kU"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                                <connections>
+                                                                    <action selector="displayPlayerCardPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="czW-rI-JW4"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="tXb-Yt-u80" secondAttribute="trailing" constant="20" id="BpK-Cr-IH0"/>
+                                                            <constraint firstItem="VSM-Mw-cgp" firstAttribute="leading" secondItem="MCz-Ji-2JY" secondAttribute="leading" constant="20" id="GCK-nn-hlD"/>
+                                                            <constraint firstItem="Ykr-O3-0NI" firstAttribute="top" secondItem="eYH-Er-ewK" secondAttribute="bottom" constant="20" id="LsG-Hn-RP8"/>
+                                                            <constraint firstAttribute="trailing" secondItem="eYH-Er-ewK" secondAttribute="trailing" constant="20" id="Pxe-AU-laS"/>
+                                                            <constraint firstAttribute="trailing" secondItem="Ykr-O3-0NI" secondAttribute="trailing" constant="20" id="V0D-id-JeK"/>
+                                                            <constraint firstItem="VSM-Mw-cgp" firstAttribute="top" secondItem="eYH-Er-ewK" secondAttribute="bottom" constant="20" id="V6T-am-iad"/>
+                                                            <constraint firstAttribute="height" constant="110" id="a8T-84-Ilj"/>
+                                                            <constraint firstItem="Ykr-O3-0NI" firstAttribute="leading" secondItem="MCz-Ji-2JY" secondAttribute="leading" constant="20" id="eAa-J1-pxp"/>
+                                                            <constraint firstItem="eYH-Er-ewK" firstAttribute="leading" secondItem="MCz-Ji-2JY" secondAttribute="leading" constant="20" id="fbf-8e-M3a"/>
+                                                            <constraint firstItem="tXb-Yt-u80" firstAttribute="top" secondItem="eYH-Er-ewK" secondAttribute="bottom" constant="20" id="rXW-p4-Rf6"/>
+                                                            <constraint firstItem="eYH-Er-ewK" firstAttribute="top" secondItem="MCz-Ji-2JY" secondAttribute="top" constant="10" id="wEa-IT-E2p"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="cardPickerButton" destination="VSM-Mw-cgp" id="cAp-I3-VBz"/>
+                                                            <outlet property="label_text" destination="eYH-Er-ewK" id="ZWU-2p-WoU"/>
+                                                            <outlet property="opponent_text_field" destination="Ykr-O3-0NI" id="UYZ-Dj-NK1"/>
+                                                            <outlet property="removeLastCardButton" destination="tXb-Yt-u80" id="4iM-6T-PjQ"/>
+                                                        </connections>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uHh-mb-ZFe" customClass="InputCardView" customModule="EV_calc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="650" width="414" height="110"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pkJ-k5-Xma">
+                                                                <rect key="frame" x="20" y="50.5" width="374" height="34"/>
+                                                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UvD-nw-9rs" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="360" y="50.5" width="34" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="34" id="kv4-hs-lu6"/>
+                                                                    <constraint firstAttribute="height" constant="34" id="pIt-GA-mn3"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="delete.left" catalog="system"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What are your cards?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="su3-1s-jwd">
+                                                                <rect key="frame" x="20" y="10" width="374" height="20.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0K0-P0-0rO" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="50.5" width="330" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="34" id="aBD-66-cxq"/>
+                                                                    <constraint firstAttribute="width" constant="330" id="p8p-En-p8U"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                                <connections>
+                                                                    <action selector="displayPlayerCardPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OFN-Lp-N57"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="trailing" secondItem="UvD-nw-9rs" secondAttribute="trailing" constant="20" id="3kL-Km-jCL"/>
+                                                            <constraint firstItem="su3-1s-jwd" firstAttribute="leading" secondItem="uHh-mb-ZFe" secondAttribute="leading" constant="20" id="95b-sE-xPq"/>
+                                                            <constraint firstItem="su3-1s-jwd" firstAttribute="top" secondItem="uHh-mb-ZFe" secondAttribute="top" constant="10" id="A1s-Dr-D1l"/>
+                                                            <constraint firstItem="0K0-P0-0rO" firstAttribute="top" secondItem="su3-1s-jwd" secondAttribute="bottom" constant="20" id="NiB-ix-aUG"/>
+                                                            <constraint firstItem="UvD-nw-9rs" firstAttribute="top" secondItem="su3-1s-jwd" secondAttribute="bottom" constant="20" id="Y5w-kl-ATG"/>
+                                                            <constraint firstItem="0K0-P0-0rO" firstAttribute="leading" secondItem="uHh-mb-ZFe" secondAttribute="leading" constant="20" id="fna-Qs-4Xg"/>
+                                                            <constraint firstAttribute="trailing" secondItem="su3-1s-jwd" secondAttribute="trailing" constant="20" id="h0o-LW-zgm"/>
+                                                            <constraint firstAttribute="height" constant="110" id="i2O-XK-gsp"/>
+                                                            <constraint firstItem="pkJ-k5-Xma" firstAttribute="leading" secondItem="uHh-mb-ZFe" secondAttribute="leading" constant="20" id="kXX-6b-gQd"/>
+                                                            <constraint firstAttribute="trailing" secondItem="pkJ-k5-Xma" secondAttribute="trailing" constant="20" id="rn5-Ro-paA"/>
+                                                            <constraint firstItem="pkJ-k5-Xma" firstAttribute="top" secondItem="su3-1s-jwd" secondAttribute="bottom" constant="20" id="vrp-eg-ZdR"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="cardPickerButton" destination="0K0-P0-0rO" id="ckS-LE-k3d"/>
+                                                            <outlet property="label_text" destination="su3-1s-jwd" id="X0S-1u-qRh"/>
+                                                            <outlet property="opponent_text_field" destination="pkJ-k5-Xma" id="IAE-kl-JmU"/>
+                                                            <outlet property="removeLastCardButton" destination="UvD-nw-9rs" id="aDW-o8-Vjz"/>
+                                                        </connections>
+                                                    </view>
+                                                    <view tag="1" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uLf-TC-v40" customClass="InputCardView" customModule="EV_calc" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="765" width="414" height="110"/>
+                                                        <subviews>
+                                                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="p1t-ab-Adx">
+                                                                <rect key="frame" x="20" y="50.5" width="374" height="34"/>
+                                                                <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                                                                <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                                                            </textField>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eKD-u7-Ssy" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="360" y="50.5" width="34" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="34" id="Obn-SA-SqY"/>
+                                                                    <constraint firstAttribute="width" constant="34" id="gtW-lh-TTo"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="delete.left" catalog="system"/>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you think your opponent cards are?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kT5-je-mHe">
+                                                                <rect key="frame" x="20" y="10" width="374" height="20.5"/>
+                                                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lJ8-HT-hiC" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                                                                <rect key="frame" x="20" y="50.5" width="330" height="34"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="width" constant="330" id="N4H-wU-rjd"/>
+                                                                    <constraint firstAttribute="height" constant="34" id="PDn-TU-Ztt"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain"/>
+                                                                <connections>
+                                                                    <action selector="displayPlayerCardPicker:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Xq3-oq-pa4"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="p1t-ab-Adx" firstAttribute="top" secondItem="kT5-je-mHe" secondAttribute="bottom" constant="20" id="7I7-nk-yxR"/>
+                                                            <constraint firstItem="lJ8-HT-hiC" firstAttribute="leading" secondItem="uLf-TC-v40" secondAttribute="leading" constant="20" id="7gA-oT-HyH"/>
+                                                            <constraint firstAttribute="trailing" secondItem="p1t-ab-Adx" secondAttribute="trailing" constant="20" id="A7Q-Q9-NCp"/>
+                                                            <constraint firstAttribute="trailing" secondItem="eKD-u7-Ssy" secondAttribute="trailing" constant="20" id="ASg-M8-hBz"/>
+                                                            <constraint firstItem="kT5-je-mHe" firstAttribute="leading" secondItem="uLf-TC-v40" secondAttribute="leading" constant="20" id="FOk-Sd-80T"/>
+                                                            <constraint firstItem="kT5-je-mHe" firstAttribute="top" secondItem="uLf-TC-v40" secondAttribute="top" constant="10" id="GMv-eJ-g4W"/>
+                                                            <constraint firstItem="eKD-u7-Ssy" firstAttribute="top" secondItem="kT5-je-mHe" secondAttribute="bottom" constant="20" id="IhL-gc-6ue"/>
+                                                            <constraint firstAttribute="height" constant="110" id="NkN-mg-lYw"/>
+                                                            <constraint firstAttribute="trailing" secondItem="kT5-je-mHe" secondAttribute="trailing" constant="20" id="k7d-ni-1Ms"/>
+                                                            <constraint firstItem="lJ8-HT-hiC" firstAttribute="top" secondItem="kT5-je-mHe" secondAttribute="bottom" constant="20" id="s3z-Jv-XMQ"/>
+                                                            <constraint firstItem="p1t-ab-Adx" firstAttribute="leading" secondItem="uLf-TC-v40" secondAttribute="leading" constant="20" id="ziE-e0-KdB"/>
+                                                        </constraints>
+                                                        <connections>
+                                                            <outlet property="cardPickerButton" destination="lJ8-HT-hiC" id="eoD-Pj-Hj5"/>
+                                                            <outlet property="label_text" destination="kT5-je-mHe" id="xKp-O5-TD2"/>
+                                                            <outlet property="opponent_text_field" destination="p1t-ab-Adx" id="wla-gl-Gcz"/>
+                                                            <outlet property="removeLastCardButton" destination="eKD-u7-Ssy" id="bwn-35-jeM"/>
+                                                        </connections>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zga-uh-kpZ">
+                                                        <rect key="frame" x="0.0" y="880" width="414" height="220"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f7x-94-FtT">
+                                                                <rect key="frame" x="294.5" y="109" width="119.5" height="31"/>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="plain" image="plus.circle.fill" catalog="system" title="Add Player" imagePadding="5"/>
+                                                                <connections>
+                                                                    <action selector="addNewElement" destination="BYZ-38-t0r" eventType="touchUpInside" id="32W-ko-e5J"/>
+                                                                </connections>
+                                                            </button>
+                                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="szc-l1-UsK">
+                                                                <rect key="frame" x="0.0" y="170" width="414" height="50"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="50" id="6rj-RC-fob"/>
+                                                                </constraints>
+                                                                <state key="normal" title="Button"/>
+                                                                <buttonConfiguration key="configuration" style="filled" title="Calculate EV"/>
+                                                                <connections>
+                                                                    <action selector="calculate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4zG-uG-c7R"/>
+                                                                </connections>
+                                                            </button>
+                                                        </subviews>
+                                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstItem="szc-l1-UsK" firstAttribute="leading" secondItem="Zga-uh-kpZ" secondAttribute="leading" id="LQA-Lf-UQf"/>
+                                                            <constraint firstAttribute="trailing" secondItem="szc-l1-UsK" secondAttribute="trailing" id="Nw5-BU-av7"/>
+                                                            <constraint firstAttribute="trailing" secondItem="f7x-94-FtT" secondAttribute="trailing" id="V9g-G7-N9c"/>
+                                                            <constraint firstAttribute="height" constant="220" id="Vqe-GM-KiG"/>
+                                                            <constraint firstAttribute="bottom" secondItem="szc-l1-UsK" secondAttribute="bottom" id="kqx-4S-gft"/>
+                                                            <constraint firstItem="szc-l1-UsK" firstAttribute="top" secondItem="f7x-94-FtT" secondAttribute="bottom" constant="30" id="wV0-xX-xtY"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstItem="lK9-pB-Maf" firstAttribute="leading" secondItem="XAv-33-mdL" secondAttribute="leading" id="G90-e9-36w"/>
+                                            <constraint firstAttribute="trailing" secondItem="lK9-pB-Maf" secondAttribute="trailing" id="KNd-NJ-Pqz"/>
+                                            <constraint firstAttribute="bottom" secondItem="lK9-pB-Maf" secondAttribute="bottom" id="em2-q2-CNn"/>
+                                            <constraint firstItem="lK9-pB-Maf" firstAttribute="top" secondItem="XAv-33-mdL" secondAttribute="top" id="qN4-i0-Fbs"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="XAv-33-mdL" firstAttribute="top" secondItem="qC6-jg-t4c" secondAttribute="top" id="2ow-g5-5hd"/>
+                                    <constraint firstItem="XAv-33-mdL" firstAttribute="width" secondItem="XSB-l9-IB9" secondAttribute="width" id="4Fz-mP-Kd6"/>
+                                    <constraint firstAttribute="bottom" secondItem="XAv-33-mdL" secondAttribute="bottom" id="Fn3-MO-pTS"/>
+                                    <constraint firstAttribute="trailing" secondItem="XAv-33-mdL" secondAttribute="trailing" id="tcr-Hu-Dbe"/>
+                                    <constraint firstItem="XAv-33-mdL" firstAttribute="leading" secondItem="qC6-jg-t4c" secondAttribute="leading" id="uV5-fg-AK9"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="OqA-Rg-JH0"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="XSB-l9-IB9"/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="qC6-jg-t4c" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="9gD-Tq-F7m"/>
+                            <constraint firstItem="qC6-jg-t4c" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BKw-1K-yxh"/>
+                            <constraint firstAttribute="bottom" secondItem="qC6-jg-t4c" secondAttribute="bottom" id="HYX-rW-XeM"/>
+                            <constraint firstAttribute="trailing" secondItem="qC6-jg-t4c" secondAttribute="trailing" id="vie-f4-zdi"/>
+                        </constraints>
+                    </view>
+                    <size key="freeformSize" width="414" height="1126"/>
+                    <connections>
+                        <outlet property="blurView" destination="gcs-RC-l6q" id="h9g-Jz-5TG"/>
+                        <outlet property="componentStack" destination="lK9-pB-Maf" id="rhy-Db-5aU"/>
+                        <outlet property="expLoss" destination="nQT-rl-VeC" id="PV1-3o-oXF"/>
+                        <outlet property="expProfit" destination="fGd-cJ-1VO" id="i7i-QJ-29A"/>
+                        <outlet property="flopCardView" destination="mu9-3Q-AvW" id="i4M-CS-RWa"/>
+                        <outlet property="opponentCardView" destination="uLf-TC-v40" id="H0D-wj-BoL"/>
+                        <outlet property="playerCardView" destination="uHh-mb-ZFe" id="v5A-BS-Z1I"/>
+                        <outlet property="progressView" destination="eTc-zA-n1s" id="X8y-sY-ZkY"/>
+                        <outlet property="resultImage" destination="ALM-5Z-MF0" id="8ck-Mn-17a"/>
+                        <outlet property="resultLabel" destination="lF2-91-vyo" id="JRc-qn-Ohj"/>
+                        <outlet property="resultMessage" destination="kOb-U3-Qky" id="uSS-DF-xYV"/>
+                        <outlet property="resultView" destination="l7V-r1-UZm" id="4hy-SZ-erX"/>
+                        <outlet property="riverCardView" destination="MCz-Ji-2JY" id="wQV-4E-lDE"/>
+                        <outlet property="spinnerProgress" destination="6Q9-g3-Vbg" id="lug-Di-SRw"/>
+                        <outlet property="turnCardView" destination="tWP-RH-xmi" id="7tl-47-bcH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <view contentMode="scaleToFill" id="eTc-zA-n1s">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="198"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="6Q9-g3-Vbg">
+                            <rect key="frame" x="95" y="74" width="50" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="68f-6I-qWW"/>
+                                <constraint firstAttribute="height" constant="50" id="6ra-Nw-xvd"/>
+                            </constraints>
+                        </activityIndicatorView>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="s4a-aR-9gL"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="6Q9-g3-Vbg" firstAttribute="centerY" secondItem="eTc-zA-n1s" secondAttribute="centerY" id="eF4-d4-liV"/>
+                        <constraint firstItem="6Q9-g3-Vbg" firstAttribute="centerX" secondItem="eTc-zA-n1s" secondAttribute="centerX" id="zAs-p1-0x6"/>
+                    </constraints>
+                </view>
+                <visualEffectView opaque="NO" contentMode="scaleToFill" id="gcs-RC-l6q">
+                    <rect key="frame" x="0.0" y="0.0" width="240" height="198"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="rMk-N5-bWq">
+                        <rect key="frame" x="0.0" y="0.0" width="240" height="198"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                    <blurEffect style="regular"/>
+                </visualEffectView>
+                <view contentMode="scaleToFill" id="l7V-r1-UZm">
+                    <rect key="frame" x="0.0" y="0.0" width="279" height="198"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lF2-91-vyo">
+                            <rect key="frame" x="20" y="20" width="169" height="37"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arrow.up" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="ALM-5Z-MF0">
+                            <rect key="frame" x="209" y="21" width="50" height="50"/>
+                            <color key="tintColor" systemColor="labelColor"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="50" id="2kV-hi-7Jg"/>
+                                <constraint firstAttribute="height" constant="52" id="WGs-wc-1EA"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kOb-U3-Qky">
+                            <rect key="frame" x="20" y="92" width="239" height="20.5"/>
+                            <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <viewLayoutGuide key="safeArea" id="TVb-if-INF"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="lF2-91-vyo" firstAttribute="leading" secondItem="l7V-r1-UZm" secondAttribute="leading" constant="20" id="1ew-Ng-1p8"/>
+                        <constraint firstItem="ALM-5Z-MF0" firstAttribute="top" secondItem="l7V-r1-UZm" secondAttribute="top" constant="20" id="7Nj-k3-1gH"/>
+                        <constraint firstItem="lF2-91-vyo" firstAttribute="top" secondItem="l7V-r1-UZm" secondAttribute="top" constant="20" id="CDg-3W-tt9"/>
+                        <constraint firstItem="TVb-if-INF" firstAttribute="trailing" secondItem="kOb-U3-Qky" secondAttribute="trailing" constant="20" id="GsK-zC-Gss"/>
+                        <constraint firstAttribute="bottom" secondItem="kOb-U3-Qky" secondAttribute="bottom" constant="20" id="Unr-41-GV7"/>
+                        <constraint firstItem="kOb-U3-Qky" firstAttribute="top" secondItem="lF2-91-vyo" secondAttribute="bottom" constant="35" id="khc-Hb-15A"/>
+                        <constraint firstItem="kOb-U3-Qky" firstAttribute="leading" secondItem="TVb-if-INF" secondAttribute="leading" constant="20" id="pUh-ne-nUh"/>
+                        <constraint firstItem="TVb-if-INF" firstAttribute="trailing" secondItem="ALM-5Z-MF0" secondAttribute="trailing" constant="20" id="pcK-ei-YX4"/>
+                        <constraint firstItem="ALM-5Z-MF0" firstAttribute="leading" secondItem="lF2-91-vyo" secondAttribute="trailing" constant="20" id="xru-Pl-enS"/>
+                    </constraints>
+                </view>
+            </objects>
+            <point key="canvasLocation" x="28.985507246376812" y="148.66071428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow.up" catalog="system" width="120" height="128"/>
+        <image name="delete.left" catalog="system" width="128" height="104"/>
+        <image name="plus.circle.fill" catalog="system" width="128" height="121"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

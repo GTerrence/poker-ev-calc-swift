@@ -1,0 +1,423 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F700550C281FF98E00335F72 /* OpponentCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700550B281FF98E00335F72 /* OpponentCardView.swift */; };
+		F700550E281FFA0100335F72 /* OpponentCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F700550D281FFA0100335F72 /* OpponentCardView.xib */; };
+		F7005510281FFA1900335F72 /* ViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F700550F281FFA1900335F72 /* ViewExt.swift */; };
+		F70055122821182800335F72 /* closeViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F70055112821182800335F72 /* closeViewButton.swift */; };
+		F767B6112817F7300086E9DC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F767B6102817F7300086E9DC /* AppDelegate.swift */; };
+		F767B6132817F7300086E9DC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F767B6122817F7300086E9DC /* SceneDelegate.swift */; };
+		F767B6152817F7300086E9DC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F767B6142817F7300086E9DC /* ViewController.swift */; };
+		F767B6182817F7300086E9DC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F767B6162817F7300086E9DC /* Main.storyboard */; };
+		F767B61A2817F7310086E9DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F767B6192817F7310086E9DC /* Assets.xcassets */; };
+		F767B61D2817F7310086E9DC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F767B61B2817F7310086E9DC /* LaunchScreen.storyboard */; };
+		F7745AC8282921B40093790A /* FirstOpponentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7745AC7282921B40093790A /* FirstOpponentView.swift */; };
+		F7745ACA282A436D0093790A /* CardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7745AC9282A436D0093790A /* CardButton.swift */; };
+		F7745ACC282A6E560093790A /* ModalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7745ACB282A6E560093790A /* ModalViewController.swift */; };
+		F7745ACE282B96C40093790A /* card_deck.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7745ACD282B96C40093790A /* card_deck.swift */; };
+		F7745AD1282B97140093790A /* PokerTrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7745AD0282B97140093790A /* PokerTrain.swift */; };
+		F7745AD82830A31D0093790A /* PickerViewExt.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7745AD72830A31C0093790A /* PickerViewExt.swift */; };
+		F7745AE02834DAD40093790A /* ResultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7745ADF2834DAD40093790A /* ResultView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		F700550B281FF98E00335F72 /* OpponentCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpponentCardView.swift; sourceTree = "<group>"; };
+		F700550D281FFA0100335F72 /* OpponentCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OpponentCardView.xib; sourceTree = "<group>"; };
+		F700550F281FFA1900335F72 /* ViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewExt.swift; sourceTree = "<group>"; };
+		F70055112821182800335F72 /* closeViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = closeViewButton.swift; sourceTree = "<group>"; };
+		F767B60D2817F7300086E9DC /* EV_calc.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EV_calc.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F767B6102817F7300086E9DC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F767B6122817F7300086E9DC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F767B6142817F7300086E9DC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F767B6172817F7300086E9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F767B6192817F7310086E9DC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F767B61C2817F7310086E9DC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F767B61E2817F7310086E9DC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7745AC7282921B40093790A /* FirstOpponentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstOpponentView.swift; sourceTree = "<group>"; };
+		F7745AC9282A436D0093790A /* CardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardButton.swift; sourceTree = "<group>"; };
+		F7745ACB282A6E560093790A /* ModalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModalViewController.swift; sourceTree = "<group>"; };
+		F7745ACD282B96C40093790A /* card_deck.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = card_deck.swift; sourceTree = "<group>"; };
+		F7745AD0282B97140093790A /* PokerTrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokerTrain.swift; sourceTree = "<group>"; };
+		F7745AD72830A31C0093790A /* PickerViewExt.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerViewExt.swift; sourceTree = "<group>"; };
+		F7745ADF2834DAD40093790A /* ResultView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F767B60A2817F7300086E9DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F767B6042817F7300086E9DC = {
+			isa = PBXGroup;
+			children = (
+				F767B60F2817F7300086E9DC /* EV_calc */,
+				F767B60E2817F7300086E9DC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F767B60E2817F7300086E9DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F767B60D2817F7300086E9DC /* EV_calc.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F767B60F2817F7300086E9DC /* EV_calc */ = {
+			isa = PBXGroup;
+			children = (
+				F7745AD2282B97270093790A /* OpponentView */,
+				F7745ACF282B96FB0093790A /* Object */,
+				F767B6102817F7300086E9DC /* AppDelegate.swift */,
+				F767B6122817F7300086E9DC /* SceneDelegate.swift */,
+				F767B6142817F7300086E9DC /* ViewController.swift */,
+				F767B6162817F7300086E9DC /* Main.storyboard */,
+				F767B6192817F7310086E9DC /* Assets.xcassets */,
+				F767B61B2817F7310086E9DC /* LaunchScreen.storyboard */,
+				F767B61E2817F7310086E9DC /* Info.plist */,
+				F700550F281FFA1900335F72 /* ViewExt.swift */,
+				F7745AC7282921B40093790A /* FirstOpponentView.swift */,
+				F7745AC9282A436D0093790A /* CardButton.swift */,
+				F7745ACB282A6E560093790A /* ModalViewController.swift */,
+				F7745AD72830A31C0093790A /* PickerViewExt.swift */,
+				F7745ADF2834DAD40093790A /* ResultView.swift */,
+			);
+			path = EV_calc;
+			sourceTree = "<group>";
+		};
+		F7745ACF282B96FB0093790A /* Object */ = {
+			isa = PBXGroup;
+			children = (
+				F7745ACD282B96C40093790A /* card_deck.swift */,
+				F7745AD0282B97140093790A /* PokerTrain.swift */,
+			);
+			path = Object;
+			sourceTree = "<group>";
+		};
+		F7745AD2282B97270093790A /* OpponentView */ = {
+			isa = PBXGroup;
+			children = (
+				F700550B281FF98E00335F72 /* OpponentCardView.swift */,
+				F700550D281FFA0100335F72 /* OpponentCardView.xib */,
+				F70055112821182800335F72 /* closeViewButton.swift */,
+			);
+			path = OpponentView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F767B60C2817F7300086E9DC /* EV_calc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F767B6212817F7310086E9DC /* Build configuration list for PBXNativeTarget "EV_calc" */;
+			buildPhases = (
+				F767B6092817F7300086E9DC /* Sources */,
+				F767B60A2817F7300086E9DC /* Frameworks */,
+				F767B60B2817F7300086E9DC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EV_calc;
+			productName = EV_calc;
+			productReference = F767B60D2817F7300086E9DC /* EV_calc.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F767B6052817F7300086E9DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1330;
+				LastUpgradeCheck = 1330;
+				TargetAttributes = {
+					F767B60C2817F7300086E9DC = {
+						CreatedOnToolsVersion = 13.3.1;
+					};
+				};
+			};
+			buildConfigurationList = F767B6082817F7300086E9DC /* Build configuration list for PBXProject "EV_calc" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F767B6042817F7300086E9DC;
+			productRefGroup = F767B60E2817F7300086E9DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F767B60C2817F7300086E9DC /* EV_calc */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F767B60B2817F7300086E9DC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F767B61D2817F7310086E9DC /* LaunchScreen.storyboard in Resources */,
+				F700550E281FFA0100335F72 /* OpponentCardView.xib in Resources */,
+				F767B61A2817F7310086E9DC /* Assets.xcassets in Resources */,
+				F767B6182817F7300086E9DC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F767B6092817F7300086E9DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F767B6152817F7300086E9DC /* ViewController.swift in Sources */,
+				F7745ACA282A436D0093790A /* CardButton.swift in Sources */,
+				F700550C281FF98E00335F72 /* OpponentCardView.swift in Sources */,
+				F7005510281FFA1900335F72 /* ViewExt.swift in Sources */,
+				F7745AD82830A31D0093790A /* PickerViewExt.swift in Sources */,
+				F767B6112817F7300086E9DC /* AppDelegate.swift in Sources */,
+				F767B6132817F7300086E9DC /* SceneDelegate.swift in Sources */,
+				F7745AE02834DAD40093790A /* ResultView.swift in Sources */,
+				F7745AC8282921B40093790A /* FirstOpponentView.swift in Sources */,
+				F7745ACC282A6E560093790A /* ModalViewController.swift in Sources */,
+				F7745AD1282B97140093790A /* PokerTrain.swift in Sources */,
+				F7745ACE282B96C40093790A /* card_deck.swift in Sources */,
+				F70055122821182800335F72 /* closeViewButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F767B6162817F7300086E9DC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F767B6172817F7300086E9DC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F767B61B2817F7310086E9DC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F767B61C2817F7310086E9DC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F767B61F2817F7310086E9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F767B6202817F7310086E9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F767B6222817F7310086E9DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H4B8Q4454B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EV_calc/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.terrence.EV-calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F767B6232817F7310086E9DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = H4B8Q4454B;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = EV_calc/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.terrence.EV-calc";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F767B6082817F7300086E9DC /* Build configuration list for PBXProject "EV_calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F767B61F2817F7310086E9DC /* Debug */,
+				F767B6202817F7310086E9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F767B6212817F7310086E9DC /* Build configuration list for PBXNativeTarget "EV_calc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F767B6222817F7310086E9DC /* Debug */,
+				F767B6232817F7310086E9DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F767B6052817F7300086E9DC /* Project object */;
+}

@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InputCardView" customModule="EV_calc" customModuleProvider="target"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="InputCardView" customModule="EV_calc" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" adjustsFontForContentSizeCategory="YES" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SJa-Yv-OWL">
+                    <rect key="frame" x="20" y="50.5" width="374" height="34"/>
+                    <color key="backgroundColor" systemColor="tertiarySystemFillColor"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
+                    <textInputTraits key="textInputTraits" keyboardType="alphabet"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CyC-2o-Ulr" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                    <rect key="frame" x="360" y="50.5" width="34" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="34" id="XHR-PJ-ERJ"/>
+                        <constraint firstAttribute="height" constant="34" id="zyv-Ao-9mu"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="delete.backward" catalog="system"/>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What do you think your opponent card is?" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vdg-1E-NeO">
+                    <rect key="frame" x="20" y="10" width="339" height="20.5"/>
+                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CWV-8p-A5X" customClass="closeViewButton" customModule="EV_calc" customModuleProvider="target">
+                    <rect key="frame" x="369" y="5" width="35" height="31"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="35" id="ka8-Mh-aXD"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="X"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xVP-1X-Wwm" customClass="CardButton" customModule="EV_calc" customModuleProvider="target">
+                    <rect key="frame" x="20" y="50.5" width="330" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="4r4-yr-lAB"/>
+                        <constraint firstAttribute="width" constant="330" id="sHf-bJ-2RM"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain"/>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="CyC-2o-Ulr" firstAttribute="top" secondItem="Vdg-1E-NeO" secondAttribute="bottom" constant="20" id="3uo-mu-hTd"/>
+                <constraint firstItem="Vdg-1E-NeO" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="10" id="7J2-1o-rQN"/>
+                <constraint firstItem="SJa-Yv-OWL" firstAttribute="top" secondItem="Vdg-1E-NeO" secondAttribute="bottom" constant="20" id="Alu-C5-5Np"/>
+                <constraint firstItem="xVP-1X-Wwm" firstAttribute="top" secondItem="Vdg-1E-NeO" secondAttribute="bottom" constant="20" id="C5B-J0-dBK"/>
+                <constraint firstItem="CWV-8p-A5X" firstAttribute="leading" secondItem="Vdg-1E-NeO" secondAttribute="trailing" constant="10" id="cFd-dL-Qpm"/>
+                <constraint firstItem="CWV-8p-A5X" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="5" id="dY1-6n-yNZ"/>
+                <constraint firstItem="xVP-1X-Wwm" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="fLS-3P-sVa"/>
+                <constraint firstItem="Vdg-1E-NeO" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="20" id="g82-Zl-3NU"/>
+                <constraint firstAttribute="trailing" secondItem="CWV-8p-A5X" secondAttribute="trailing" constant="10" id="ha6-TB-icD"/>
+                <constraint firstAttribute="trailing" secondItem="SJa-Yv-OWL" secondAttribute="trailing" constant="20" id="o7O-BL-2yp"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="CyC-2o-Ulr" secondAttribute="trailing" constant="20" id="q3v-oA-dTX"/>
+                <constraint firstItem="SJa-Yv-OWL" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="vGj-G4-JTS"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="cardPickerButton" destination="xVP-1X-Wwm" id="44m-dB-zkt"/>
+                <outlet property="closeButton" destination="CWV-8p-A5X" id="cB2-ga-YfH"/>
+                <outlet property="label_text" destination="Vdg-1E-NeO" id="zWF-RC-qB8"/>
+                <outlet property="opponent_text_field" destination="SJa-Yv-OWL" id="PPT-1V-0Q2"/>
+                <outlet property="removeLastCardButton" destination="CyC-2o-Ulr" id="VFg-Rq-mf3"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="86.383928571428569"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete.backward" catalog="system" width="128" height="104"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="tertiarySystemFillColor">
+            <color red="0.46274509803921571" green="0.46274509803921571" blue="0.50196078431372548" alpha="0.12" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
